@@ -1,0 +1,27 @@
+Name: Andrey
+Surname: Marchenko
+Age: 18
+Ukraine Kherson Patona 25
+Male
+Ukrainian
+mrandoksss1@gmail.com
+241
+CSharp
+Development of software engineering
+About development of software engineering
+17.5.2023
+ 
+Name: Poul
+Surname: Devis
+Age: 19
+Poland Warsaw Bzhesh 12
+Male
+Polish
+mrandoksss1@gmail.com
+241
+CSharp
+Development of software engineering
+About development of software engineering
+17.5.2023
+ 
+

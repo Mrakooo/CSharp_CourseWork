@@ -1,0 +1,11 @@
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\bin\Debug\Course Windows Forms (Last).exe.config
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\bin\Debug\Course Windows Forms (Last).exe
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\bin\Debug\Course Windows Forms (Last).pdb
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course Windows Forms (Last).csproj.AssemblyReference.cache
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course_Windows_Forms__Last_.Form1.resources
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course_Windows_Forms__Last_.Properties.Resources.resources
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course Windows Forms (Last).csproj.GenerateResource.cache
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course Windows Forms (Last).csproj.CoreCompileInputs.cache
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course Windows Forms (Last).exe
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course Windows Forms (Last).pdb
+C:\Users\AND\source\repos\Course Windows Forms (Last)\Course Windows Forms (Last)\obj\Debug\Course_Windows_Forms__Last_.Form2.resources
