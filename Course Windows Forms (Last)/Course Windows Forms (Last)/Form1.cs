@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace Course_Windows_Forms__Last_
 {
     
@@ -606,48 +607,50 @@ namespace Course_Windows_Forms__Last_
         {
             //this.labelTry.Text = this.treeView1.SelectedNode.Tag.ToString();
 
-            string form2_student = this.treeView1.SelectedNode.Tag.ToString();
-            string checkStud, form2_title, form2_description, deadlinetext;
-            int form2_yearDate, form2_monthDate, form2_dayDate, form2_year, form2_month, form2_day;
-            bool IsOutdue = false;
-
-            form2_yearDate = Date.Year;
-            form2_monthDate = Date.Month;
-            form2_dayDate = Date.Day;
-
-            form2_year = Date.Year;
-            form2_month = Date.Month;
-            form2_day = Date.Day;
-
-            form2_title = "Not found";
-            form2_description = "Not found";
-            deadlinetext = form2_day.ToString() + "." + form2_month.ToString() + "." + form2_year.ToString();
-
-            for (int i = 0; i < DictStudent.Count; i++)
+            if (this.treeView1.SelectedNode.Tag != null)
             {
-                checkStud = DictStudent[i].Name + " " + DictStudent[i].Surname;
+                string form2_student = this.treeView1.SelectedNode.Tag.ToString();
+                string checkStud, form2_title, form2_description, deadlinetext;
+                int form2_yearDate, form2_monthDate, form2_dayDate, form2_year, form2_month, form2_day;
+                bool IsOutdue = false;
 
-                if (form2_student == checkStud)
+                form2_yearDate = Date.Year;
+                form2_monthDate = Date.Month;
+                form2_dayDate = Date.Day;
+
+                form2_year = Date.Year;
+                form2_month = Date.Month;
+                form2_day = Date.Day;
+
+                form2_title = "Not found";
+                form2_description = "Not found";
+                deadlinetext = form2_day.ToString() + "." + form2_month.ToString() + "." + form2_year.ToString();
+
+                for (int i = 0; i < DictStudent.Count; i++)
                 {
-                    form2_title = DictStudent[i].GetCourseWork.Name;
-                    form2_description = DictStudent[i].GetCourseWork.Description;
-                    form2_year = DictStudent[i].GetCourseWork.Deadline.Year;
-                    form2_month = DictStudent[i].GetCourseWork.Deadline.Month;
-                    form2_day = DictStudent[i].GetCourseWork.Deadline.Day;
-                    deadlinetext = form2_day.ToString() + "." + form2_month.ToString() + "." + form2_year.ToString();
-                    IsOutdue = DictStudent[i].GetCourseWork.IsOutdue;
+                    checkStud = DictStudent[i].Name + " " + DictStudent[i].Surname;
 
-                    break;
+                    if (form2_student == checkStud)
+                    {
+                        form2_title = DictStudent[i].GetCourseWork.Name;
+                        form2_description = DictStudent[i].GetCourseWork.Description;
+                        form2_year = DictStudent[i].GetCourseWork.Deadline.Year;
+                        form2_month = DictStudent[i].GetCourseWork.Deadline.Month;
+                        form2_day = DictStudent[i].GetCourseWork.Deadline.Day;
+                        deadlinetext = form2_day.ToString() + "." + form2_month.ToString() + "." + form2_year.ToString();
+                        IsOutdue = DictStudent[i].GetCourseWork.IsOutdue;
+
+                        break;
+                    }
+
                 }
 
-            }
-
-            Form2 form2 = new Form2(
-                form2_student,
-                form2_title,
-                form2_description,
-                deadlinetext,
-                IsOutdue /*,
+                Form2 form2 = new Form2(
+                    form2_student,
+                    form2_title,
+                    form2_description,
+                    deadlinetext,
+                    IsOutdue /*,
                 form2_yearDate,
                 form2_monthDate, 
                 form2_dayDate,
@@ -656,8 +659,9 @@ namespace Course_Windows_Forms__Last_
                 form2_day */);
 
 
-            
-            form2.ShowDialog();
+
+                form2.ShowDialog();
+            }
             
         }
 
@@ -794,6 +798,9 @@ namespace Course_Windows_Forms__Last_
             }
         }
 
+        private void buttonWriteJSSt_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

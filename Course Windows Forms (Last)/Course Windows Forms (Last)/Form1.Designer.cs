@@ -63,6 +63,12 @@ namespace Course_Windows_Forms__Last_
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.richTextBoxList = new System.Windows.Forms.RichTextBox();
+            this.groupBoxTXT = new System.Windows.Forms.GroupBox();
+            this.buttonRdTch = new System.Windows.Forms.Button();
+            this.buttonWrTch = new System.Windows.Forms.Button();
+            this.buttonRdSt = new System.Windows.Forms.Button();
+            this.buttonWrSt = new System.Windows.Forms.Button();
             this.labelTry = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePickerDate = new System.Windows.Forms.DateTimePicker();
@@ -110,17 +116,12 @@ namespace Course_Windows_Forms__Last_
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.groupBoxTXT = new System.Windows.Forms.GroupBox();
-            this.buttonWrSt = new System.Windows.Forms.Button();
-            this.buttonRdSt = new System.Windows.Forms.Button();
-            this.buttonWrTch = new System.Windows.Forms.Button();
-            this.buttonRdTch = new System.Windows.Forms.Button();
-            this.richTextBoxList = new System.Windows.Forms.RichTextBox();
             this.tabPage5.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAgeT)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.groupBoxTXT.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -129,7 +130,6 @@ namespace Course_Windows_Forms__Last_
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.groupBoxTXT.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -463,6 +463,67 @@ namespace Course_Windows_Forms__Last_
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // richTextBoxList
+            // 
+            this.richTextBoxList.Location = new System.Drawing.Point(803, 0);
+            this.richTextBoxList.Name = "richTextBoxList";
+            this.richTextBoxList.Size = new System.Drawing.Size(341, 529);
+            this.richTextBoxList.TabIndex = 6;
+            this.richTextBoxList.Text = "";
+            // 
+            // groupBoxTXT
+            // 
+            this.groupBoxTXT.Controls.Add(this.buttonRdTch);
+            this.groupBoxTXT.Controls.Add(this.buttonWrTch);
+            this.groupBoxTXT.Controls.Add(this.buttonRdSt);
+            this.groupBoxTXT.Controls.Add(this.buttonWrSt);
+            this.groupBoxTXT.Location = new System.Drawing.Point(480, 117);
+            this.groupBoxTXT.Name = "groupBoxTXT";
+            this.groupBoxTXT.Size = new System.Drawing.Size(308, 213);
+            this.groupBoxTXT.TabIndex = 5;
+            this.groupBoxTXT.TabStop = false;
+            this.groupBoxTXT.Text = "Write/Read";
+            // 
+            // buttonRdTch
+            // 
+            this.buttonRdTch.Location = new System.Drawing.Point(6, 162);
+            this.buttonRdTch.Name = "buttonRdTch";
+            this.buttonRdTch.Size = new System.Drawing.Size(296, 37);
+            this.buttonRdTch.TabIndex = 5;
+            this.buttonRdTch.Text = "Read List Teachers";
+            this.buttonRdTch.UseVisualStyleBackColor = true;
+            this.buttonRdTch.Click += new System.EventHandler(this.buttonRdTch_Click);
+            // 
+            // buttonWrTch
+            // 
+            this.buttonWrTch.Location = new System.Drawing.Point(6, 76);
+            this.buttonWrTch.Name = "buttonWrTch";
+            this.buttonWrTch.Size = new System.Drawing.Size(296, 37);
+            this.buttonWrTch.TabIndex = 4;
+            this.buttonWrTch.Text = "Write List Teachers";
+            this.buttonWrTch.UseVisualStyleBackColor = true;
+            this.buttonWrTch.Click += new System.EventHandler(this.buttonWrTch_Click);
+            // 
+            // buttonRdSt
+            // 
+            this.buttonRdSt.Location = new System.Drawing.Point(6, 119);
+            this.buttonRdSt.Name = "buttonRdSt";
+            this.buttonRdSt.Size = new System.Drawing.Size(296, 37);
+            this.buttonRdSt.TabIndex = 3;
+            this.buttonRdSt.Text = "Read List Students";
+            this.buttonRdSt.UseVisualStyleBackColor = true;
+            this.buttonRdSt.Click += new System.EventHandler(this.buttonRdSt_Click);
+            // 
+            // buttonWrSt
+            // 
+            this.buttonWrSt.Location = new System.Drawing.Point(6, 33);
+            this.buttonWrSt.Name = "buttonWrSt";
+            this.buttonWrSt.Size = new System.Drawing.Size(296, 37);
+            this.buttonWrSt.TabIndex = 2;
+            this.buttonWrSt.Text = "Write List Students";
+            this.buttonWrSt.UseVisualStyleBackColor = true;
+            this.buttonWrSt.Click += new System.EventHandler(this.buttonWrSt_Click);
             // 
             // labelTry
             // 
@@ -930,67 +991,6 @@ namespace Course_Windows_Forms__Last_
             this.tabControl1.Size = new System.Drawing.Size(1160, 639);
             this.tabControl1.TabIndex = 2;
             // 
-            // groupBoxTXT
-            // 
-            this.groupBoxTXT.Controls.Add(this.buttonRdTch);
-            this.groupBoxTXT.Controls.Add(this.buttonWrTch);
-            this.groupBoxTXT.Controls.Add(this.buttonRdSt);
-            this.groupBoxTXT.Controls.Add(this.buttonWrSt);
-            this.groupBoxTXT.Location = new System.Drawing.Point(480, 117);
-            this.groupBoxTXT.Name = "groupBoxTXT";
-            this.groupBoxTXT.Size = new System.Drawing.Size(308, 212);
-            this.groupBoxTXT.TabIndex = 5;
-            this.groupBoxTXT.TabStop = false;
-            this.groupBoxTXT.Text = "Write/Read";
-            // 
-            // buttonWrSt
-            // 
-            this.buttonWrSt.Location = new System.Drawing.Point(6, 33);
-            this.buttonWrSt.Name = "buttonWrSt";
-            this.buttonWrSt.Size = new System.Drawing.Size(296, 37);
-            this.buttonWrSt.TabIndex = 2;
-            this.buttonWrSt.Text = "Write List Students";
-            this.buttonWrSt.UseVisualStyleBackColor = true;
-            this.buttonWrSt.Click += new System.EventHandler(this.buttonWrSt_Click);
-            // 
-            // buttonRdSt
-            // 
-            this.buttonRdSt.Location = new System.Drawing.Point(6, 119);
-            this.buttonRdSt.Name = "buttonRdSt";
-            this.buttonRdSt.Size = new System.Drawing.Size(296, 37);
-            this.buttonRdSt.TabIndex = 3;
-            this.buttonRdSt.Text = "Read List Students";
-            this.buttonRdSt.UseVisualStyleBackColor = true;
-            this.buttonRdSt.Click += new System.EventHandler(this.buttonRdSt_Click);
-            // 
-            // buttonWrTch
-            // 
-            this.buttonWrTch.Location = new System.Drawing.Point(6, 76);
-            this.buttonWrTch.Name = "buttonWrTch";
-            this.buttonWrTch.Size = new System.Drawing.Size(296, 37);
-            this.buttonWrTch.TabIndex = 4;
-            this.buttonWrTch.Text = "Write List Teachers";
-            this.buttonWrTch.UseVisualStyleBackColor = true;
-            this.buttonWrTch.Click += new System.EventHandler(this.buttonWrTch_Click);
-            // 
-            // buttonRdTch
-            // 
-            this.buttonRdTch.Location = new System.Drawing.Point(6, 162);
-            this.buttonRdTch.Name = "buttonRdTch";
-            this.buttonRdTch.Size = new System.Drawing.Size(296, 37);
-            this.buttonRdTch.TabIndex = 5;
-            this.buttonRdTch.Text = "Read List Teachers";
-            this.buttonRdTch.UseVisualStyleBackColor = true;
-            this.buttonRdTch.Click += new System.EventHandler(this.buttonRdTch_Click);
-            // 
-            // richTextBoxList
-            // 
-            this.richTextBoxList.Location = new System.Drawing.Point(803, 0);
-            this.richTextBoxList.Name = "richTextBoxList";
-            this.richTextBoxList.Size = new System.Drawing.Size(341, 529);
-            this.richTextBoxList.TabIndex = 6;
-            this.richTextBoxList.Text = "";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1010,6 +1010,7 @@ namespace Course_Windows_Forms__Last_
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAgeT)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.groupBoxTXT.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -1021,7 +1022,6 @@ namespace Course_Windows_Forms__Last_
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.groupBoxTXT.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

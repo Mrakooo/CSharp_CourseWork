@@ -14,7 +14,7 @@ About development of software engineering
 Name: Poul
 Surname: Devis
 Age: 19
-Poland Warsaw Bzhesh 12
+Poland Warsaw Street 12
 Male
 Polish
 mrandoksss1@gmail.com
